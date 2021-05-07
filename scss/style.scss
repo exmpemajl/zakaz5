@@ -1,0 +1,368 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: Montserrat;
+    font-style: normal;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+button {
+    border: none;
+    outline: none;
+}
+//////////////////CODE/////////////////////
+.wrapper {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.container {
+    width: 100%;
+    max-width: 1070px;
+    margin: 0 auto;
+}
+.header {
+    background: #000000;
+    &__h1 {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+        padding: 11.31px 0;
+        text-align: center;
+    }
+}
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 26px;
+    &__item {
+        margin-left: 20px;
+        &:last-child {
+            margin: 0 20px 0 0;
+        }
+        input {
+            padding-left: 20px;
+        }
+    }
+    &__mobileArrow {
+        display: none;
+    }
+    &__h1 {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 35px;
+        letter-spacing: 0.05em;
+    }
+    &__pdfMobile {
+        display: none;
+    }
+
+    &__aMobile {
+        display: none;
+    }
+    &__pdfMobilContent {
+        display: none;
+    }
+    &__arrows {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__arrow {
+    }
+
+    &__p {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+        margin: 20px 0;
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    &__a {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+        color: #001aff;
+    }
+    &__main__pdfMobile {
+        display: none;
+    }
+    &__pdf {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 26px;
+        p {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 30px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: #ff0000;
+        }
+    }
+}
+.form {
+    border: 2px solid #ad0000;
+    box-sizing: border-box;
+    text-align: center;
+    :first-child {
+        text-align: left;
+    }
+    &__items {
+        margin-top: 22px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        margin: 0 34px;
+        span {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            letter-spacing: 0.05em;
+            color: #b72020;
+            margin-bottom: 10px;
+        }
+        input {
+            border: 2px solid #ad0000;
+            box-sizing: border-box;
+            height: 40px;
+            margin-bottom: 24px;
+            &:last-child {
+                margin: none;
+            }
+        }
+    }
+
+    &__button {
+        margin-bottom: 22px;
+        margin-top: 18px;
+        background: linear-gradient(90deg, #dcd300 0%, #fff500 57.31%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 30px;
+            letter-spacing: 0.05em;
+            color: #ad0000;
+        }
+    }
+}
+.section {
+    margin-top: 31px;
+    &__name {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 50px;
+        h1 {
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 30px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        span {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 30px;
+            letter-spacing: 0.05em;
+        }
+    }
+    &__button {
+        display: none;
+    }
+    &__content {
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 32px;
+        p {
+            margin-left: 50px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 27px;
+            letter-spacing: 0.05em;
+            margin-right: 20px;
+        }
+    }
+
+    &__video {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            margin-left: 20px;
+        }
+        span {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 27px;
+            letter-spacing: 0.05em;
+        }
+    }
+}
+.footer {
+    background: #000000;
+    &__h1 {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #ffffff;
+        padding: 11.31px 0;
+    }
+}
+@media (max-width: 767px) {
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        &__h1 {
+            text-align: center;
+        }
+        &__item {
+            margin-left: 0px;
+            &:last-child {
+                margin: 0 0px 0 0;
+            }
+        }
+        &__p {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        &__pdf {
+            display: none;
+        }
+        &__arrows {
+            span {
+                display: none;
+            }
+        }
+        &__pdfMobile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        &__aMobile {
+            display: block;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            letter-spacing: 0.05em;
+            color: #001aff;
+            text-align: center;
+        }
+
+        &__pdfMobilContent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 26px;
+            img {
+                margin: 20px 0;
+            }
+            p {
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 30px;
+                text-align: center;
+                letter-spacing: 0.05em;
+                color: #ff0000;
+                margin: 0 15px;
+            }
+        }
+        &__a {
+            display: none;
+        }
+        &__mobileArrow {
+            display: block;
+        }
+        &__arrow {
+            display: none;
+        }
+        &__p {
+            text-align: center;
+        }
+        form {
+            margin-top: 30px;
+        }
+    }
+    .section {
+        &__name {
+            flex-direction: column;
+            h1 {
+                margin: 20px 0;
+            }
+            span {
+                text-align: center;
+            }
+        }
+        &__item {
+            flex-direction: column;
+            p {
+                margin-top: 20px;
+                margin-left: 15px;
+                text-align: center;
+                margin-right: 15px;
+            }
+        }
+        &__video {
+            img {
+                margin-left: 0;
+            }
+        }
+        &__button {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 22px;
+            margin-top: 18px;
+            background: linear-gradient(90deg, #dcd300 0%, #fff500 57.31%);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 800;
+                font-size: 30px;
+                line-height: 30px;
+                letter-spacing: 0.05em;
+                color: #ad0000;
+            }
+        }
+    }
+    form {
+    }
+}
